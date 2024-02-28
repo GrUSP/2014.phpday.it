@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --><!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]--><!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]--><!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]--><!--[if gt IE 8]><!--><html lang="en"><!--<![endif]--><head><meta charset="utf-8"><!-- Set the viewport width to device width for mobile --><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="og:title" property="og:title" content="phpDay - May 16th-17th 2014 - Verona, Italy"><meta name="og:url" property="og:url" content="https://2014.phpday.it"><meta name="og:description" property="og:description" content="The Italian PHP Conference - May 16th-17th 2014 &mdash; Verona, Italy"><meta name="og:image" property="og:image" content="https://2014.phpday.it/wp-content/themes/phpday/img/logo_phpday_1200x630.png"><meta name="fb:admins" property="fb:admins" content="710160778"><title>phpDay 2014  &ndash;  Talks</title><!-- Included CSS Files --><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800,400italic,600,300,700" rel="stylesheet" type="text/css"><link rel="stylesheet" href="https://2014.phpday.it/wp-content/themes/phpday/css/reset.css"><link rel="stylesheet" href="https://2014.phpday.it/wp-content/themes/phpday/css/grid.css"><link rel="stylesheet" href="https://2014.phpday.it/wp-content/themes/phpday/css/main.css"><!--[if lt IE 9]>
+    <link rel="stylesheet" href="https://2014.phpday.it/wp-content/themes/phpday/css/ie.css">
+  <![endif]--><link rel="shortcut icon" href="https://2014.phpday.it/wp-content/themes/phpday/favicon.ico"><!-- IE Fix for HTML5 Tags --><!--[if lt IE 9]>
+    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]--><link href="https://2014.phpday.it/wp-content/themes/phpday/css/800.css" rel="stylesheet" type="text/css" media="screen and (max-width: 800px)"><link href="https://2014.phpday.it/wp-content/themes/phpday/css/650.css" rel="stylesheet" type="text/css" media="screen and (max-width: 650px)"><link href="https://2014.phpday.it/wp-content/themes/phpday/css/580.css" rel="stylesheet" type="text/css" media="screen and (max-width: 580px)"><link rel="alternate" type="application/rss+xml" title="phpDay 2014 &raquo; Feed" href="https://2014.phpday.it/feed/"><link rel="alternate" type="application/rss+xml" title="phpDay 2014 &raquo; Comments Feed" href="https://2014.phpday.it/comments/feed/"><link rel="alternate" type="application/rss+xml" title="phpDay 2014 &raquo; Talks Feed" href="https://2014.phpday.it/talk/feed/"><script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/2014.phpday.it\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.1"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d");return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(String.fromCharCode(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(String.fromCharCode(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(String.fromCharCode(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(String.fromCharCode(55357,56835),0,0):e.fillText(String.fromCharCode(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style><link rel="stylesheet" id="contact-form-7-css" href="https://2014.phpday.it/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.3.1" type="text/css" media="all"><!-- This site uses the Google Analytics by Yoast plugin v5.4.6 - Universal enabled - https://yoast.com/wordpress/plugins/google-analytics/ --><script type="text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+	__gaTracker('create', 'UA-3559597-12', 'auto');
+	__gaTracker('set', 'forceSSL', true);
+	__gaTracker('send','pageview');
+
+</script><!-- / Google Analytics by Yoast --><script type="text/javascript" src="https://2014.phpday.it/wp-includes/js/jquery/jquery.js?ver=1.11.3"></script><script type="text/javascript" src="https://2014.phpday.it/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script><link rel="https://api.w.org/" href="https://2014.phpday.it/wp-json/"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://2014.phpday.it/xmlrpc.php?rsd"><link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://2014.phpday.it/wp-includes/wlwmanifest.xml"><meta name="generator" content="WordPress 4.4.1"></head><body>
+  <header id="site_header"><div id="toolbar">
+      <div class="container">
+        <nav id="past_editions"><ul><li>Browse past editions:</li>
+            <!--<li><a href="https://www.phpday.it/2009" title="phpDay 2009">2009</a> |</li>
+            <li><a href="https://www.phpday.it/2010" title="phpDay 2010">2010</a> |</li>
+            <li><a href="https://www.phpday.it/2011" title="phpDay 2011">2011</a> |</li>-->
+            <li><a href="https://2012.phpday.it" title="phpDay 2012">2012</a> |</li>
+            <li><a href="https://2013.phpday.it" title="phpDay 2013">2013</a></li>
+          </ul></nav><div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+      <div class="container">
+        <h1>phpDay 2014  &ndash;  Talks</h1>
+        <a id="main_logo" href="https://2014.phpday.it"><img src="https://2014.phpday.it/wp-content/themes/phpday/img/logo_phpday.png" alt="logo_phpday" width="205" height="87"></a>
+        <div class="column_6 reminder">
+          May 16th-17th 2014 &mdash; Verona, Italy
+        </div>
+
+        <nav id="site_menu"><ul><li id="menu-item-378" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-378"><a href="https://2014.phpday.it/schedule/">Schedule</a></li>
+<li id="menu-item-345" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-345"><a href="https://2014.phpday.it/talk/">Talks</a></li>
+<li id="menu-item-288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-288"><a href="https://2014.phpday.it/sponsor/">Sponsor</a></li>
+<li id="menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30"><a href="https://2014.jsday.it" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://2014.jsday.it', 'jsday');">jsday</a></li>
+<li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="https://2014.phpday.it/location/">Venue</a></li>
+          </ul></nav><div class="clear"></div>
+        <a name="top"></a>
+      </div>
+      <div class="clear"></div>
+    </header><div id="content" class="container">
+		
+        <header id="blog_header"><h1 class="column_12">  Talks <a class="rss_feed" href="https://2014.phpday.it/feed/?post_type=talk" title="">Get Rss Feed</a></h1>
+                <div class="clear"></div>
+        </header><section id="blog" class="main"><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/scaling-php-with-azure-and-how-to-forget-infrastructure-and-management-with-web-sites/" rel="bookmark">Scaling PHP with Azure and &ldquo;How to forget infrastructure and management&rdquo; with Web Sites</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/roberto-freato/" rel="tag">Roberto Freato</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/scaling-php-with-azure-and-how-to-forget-infrastructure-and-management-with-web-sites/" title="Scaling PHP with Azure and &ldquo;How to forget infrastructure and management&rdquo; with Web Sites"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/05/500x500-50x50.png" class="attachment-talk-small size-talk-small wp-post-image" alt="500x500" srcset="https://2014.phpday.it/wp-content/uploads/2014/05/500x500-150x150.png 150w, https://2014.phpday.it/wp-content/uploads/2014/05/500x500-300x300.png 300w, https://2014.phpday.it/wp-content/uploads/2014/05/500x500-50x50.png 50w, https://2014.phpday.it/wp-content/uploads/2014/05/500x500-139x139.png 139w, https://2014.phpday.it/wp-content/uploads/2014/05/500x500.png 500w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>Let&rsquo;s look at how Microsoft is reducing dramatically all the effort needed to manage complex web applications, their infrastructure, their connected resources. Azure Web Sites is language-neutral PaaS, supporting PHP, Java, Python, Node.js and, of course, .NET.We will take a look at how to easily build a scalable infrastructure, integrating few other services like MySQL, [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/how-to-create-a-virtual-infrastructure-with-aruba-cloud-platform/" rel="bookmark">How to create a virtual infrastructure with Aruba Cloud Platform</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/marco-nieri/" rel="tag">Marco Nieri</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/how-to-create-a-virtual-infrastructure-with-aruba-cloud-platform/" title="How to create a virtual infrastructure with Aruba Cloud Platform"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/04/Schermata-2014-04-29-alle-23.54.06-1-50x50.png" class="attachment-talk-small size-talk-small wp-post-image" alt="Nieri" srcset="https://2014.phpday.it/wp-content/uploads/2014/04/Schermata-2014-04-29-alle-23.54.06-1-150x150.png 150w, https://2014.phpday.it/wp-content/uploads/2014/04/Schermata-2014-04-29-alle-23.54.06-1-50x50.png 50w, https://2014.phpday.it/wp-content/uploads/2014/04/Schermata-2014-04-29-alle-23.54.06-1-139x139.png 139w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>Aruba Cloud is a IaaS solution designed to easily create virtual datacenter ranging from a single machine to more complex structures. Aruba Cloud has every tools to provide you maximum flexibility: multiple hypervisors, multiple operating systems, virtual switch, load balancers. All these building blocks are easily provided by accessible interfaces in order to help our [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/coding-and-dreaming-php-in-2014/" rel="bookmark">Coding and Dreaming &ndash; PHP in 2014</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/rasmus-lerdorf/" rel="tag">Rasmus Lerdorf</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/coding-and-dreaming-php-in-2014/" title="Coding and Dreaming &ndash; PHP in 2014"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/04/rasmus-50x50.jpg" class="attachment-talk-small size-talk-small wp-post-image" alt="rasmus" srcset="https://2014.phpday.it/wp-content/uploads/2014/04/rasmus-150x150.jpg 150w, https://2014.phpday.it/wp-content/uploads/2014/04/rasmus-50x50.jpg 50w, https://2014.phpday.it/wp-content/uploads/2014/04/rasmus-139x139.jpg 139w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>Significant performance improvements, generators, finally statement,&nbsp;the bundled opcache, variadics, constant scalar expressions and many&nbsp;other new and cool things are available in PHP 5.5 and in the upcoming&nbsp;5.6 release. But what does it all mean? What are we building with our&nbsp;cool toys?</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/php-extension-workshop/" rel="bookmark">PHP extension workshop</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/julien-pauli/" rel="tag">Julien Pauli</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/php-extension-workshop/" title="PHP extension workshop"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2013/03/jpauli-50x50.jpg" class="attachment-talk-small size-talk-small wp-post-image" alt="jpauli" srcset="https://2014.phpday.it/wp-content/uploads/2013/03/jpauli-150x150.jpg 150w, https://2014.phpday.it/wp-content/uploads/2013/03/jpauli-300x300.jpg 300w, https://2014.phpday.it/wp-content/uploads/2013/03/jpauli-50x50.jpg 50w, https://2014.phpday.it/wp-content/uploads/2013/03/jpauli-139x139.jpg 139w, https://2014.phpday.it/wp-content/uploads/2013/03/jpauli.jpg 321w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>This tutorial will drive you inside PHP&rsquo;s extension system. Under Linux, we&rsquo;ll present PHP and its ecosystem, try to understand how it works then move to extensions. After foreseeing existing extensions, and theoretical concepts, we&rsquo;ll start by making our own. We&rsquo;ll learn how to enhance the language by adding functions, constants, INI options, classes, play [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/scaling-php-in-the-real-world/" rel="bookmark">Scaling PHP in the real world!</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/dustin-whittle/" rel="tag">Dustin Whittle</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/scaling-php-in-the-real-world/" title="Scaling PHP in the real world!"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/03/dustinwhittle-50x50.png" class="attachment-talk-small size-talk-small wp-post-image" alt="dustinwhittle" srcset="https://2014.phpday.it/wp-content/uploads/2014/03/dustinwhittle-150x150.png 150w, https://2014.phpday.it/wp-content/uploads/2014/03/dustinwhittle-300x300.png 300w, https://2014.phpday.it/wp-content/uploads/2014/03/dustinwhittle-50x50.png 50w, https://2014.phpday.it/wp-content/uploads/2014/03/dustinwhittle-139x139.png 139w, https://2014.phpday.it/wp-content/uploads/2014/03/dustinwhittle.png 512w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>PHP is used by the likes of Facebook, Yahoo, Zynga, Tumblr, Etsy, and Wikipedia. How do the largest internet companies scale PHP to meet their demand? Join this session and find out how to use the latest tools in PHP for developing high performance applications. We&rsquo;ll take a look at common techniques for scaling PHP [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/deploy-a-php-application-on-google-app-engine/" rel="bookmark">Deploy a PHP Application on Google App Engine</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/michele-orselli/" rel="tag">Michele Orselli</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/deploy-a-php-application-on-google-app-engine/" title="Deploy a PHP Application on Google App Engine"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2013/03/orso-50x50.jpg" class="attachment-talk-small size-talk-small wp-post-image" alt="orso" srcset="https://2014.phpday.it/wp-content/uploads/2013/03/orso-50x50.jpg 50w, https://2014.phpday.it/wp-content/uploads/2013/03/orso.jpg 130w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>PHP was added to the languages offered by Google App Engine about a year ago. This session will focus on porting an existing app on gae. We&rsquo;ll start talking about the main characteristics of the app engine platform, which kind of services are available (persistence, storage, queue and so on) and how to use it. [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/content-management-with-symfony2/" rel="bookmark">Content Management with Symfony2</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/david-buchmann/" rel="tag">David Buchmann</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/content-management-with-symfony2/" title="Content Management with Symfony2"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/03/dbu-50x50.jpg" class="attachment-talk-small size-talk-small wp-post-image" alt="dbu" srcset="https://2014.phpday.it/wp-content/uploads/2014/03/dbu-150x150.jpg 150w, https://2014.phpday.it/wp-content/uploads/2014/03/dbu-300x300.jpg 300w, https://2014.phpday.it/wp-content/uploads/2014/03/dbu-50x50.jpg 50w, https://2014.phpday.it/wp-content/uploads/2014/03/dbu-139x139.jpg 139w, https://2014.phpday.it/wp-content/uploads/2014/03/dbu.jpg 449w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>The Content Management Framework (CMF) is a set of building blocks for content management. You can use just parts of it to add some content management to your Symfony2 project, or use the whole stack to build customized CMS applications for specific needs. In this workshop, we do a hands-on tour through the CMF. We [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/upgrading-php/" rel="bookmark">Upgrading PHP</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/lorna-mitchell/" rel="tag">Lorna Mitchell</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/upgrading-php/" title="Upgrading PHP"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/03/lorna-50x50.jpg" class="attachment-talk-small size-talk-small wp-post-image" alt="lorna" srcset="https://2014.phpday.it/wp-content/uploads/2014/03/lorna-150x150.jpg 150w, https://2014.phpday.it/wp-content/uploads/2014/03/lorna-50x50.jpg 50w, https://2014.phpday.it/wp-content/uploads/2014/03/lorna-139x139.jpg 139w, https://2014.phpday.it/wp-content/uploads/2014/03/lorna.jpg 298w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>What version of PHP are you running? PHP 5.4? PHP 5.5? PHP 5.3? Most of us lag behind the &ldquo;new shiny&rdquo;, but at some point you&rsquo;ll face both the pain of the upgrade migration and the joy of the new features and performance improvements. Whether it&rsquo;s your boss or your distro that holds you back, [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/php-under-the-hood/" rel="bookmark">PHP: Under The Hood</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/davey-shafik/" rel="tag">Davey Shafik</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/php-under-the-hood/" title="PHP: Under The Hood"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/03/dshafik-50x50.jpeg" class="attachment-talk-small size-talk-small wp-post-image" alt="dshafik" srcset="https://2014.phpday.it/wp-content/uploads/2014/03/dshafik-150x150.jpeg 150w, https://2014.phpday.it/wp-content/uploads/2014/03/dshafik-50x50.jpeg 50w, https://2014.phpday.it/wp-content/uploads/2014/03/dshafik-139x139.jpeg 139w, https://2014.phpday.it/wp-content/uploads/2014/03/dshafik.jpeg 256w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>We&rsquo;ve all experienced performance issues and we would typically turn to a profiler. Whether that&rsquo;s something in userland, or a tool like xdebug or xhprof, the reason is the same: to figure out why our code is slow. This talk will take that inspection a step further and look under the hood of PHP, at [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/design-patterns-workshop/" rel="bookmark">Design Patterns Workshop</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/brandon-savage/" rel="tag">Brandon Savage</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/design-patterns-workshop/" title="Design Patterns Workshop"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/03/brandonsavage-50x50.jpeg" class="attachment-talk-small size-talk-small wp-post-image" alt="brandonsavage" srcset="https://2014.phpday.it/wp-content/uploads/2014/03/brandonsavage-150x150.jpeg 150w, https://2014.phpday.it/wp-content/uploads/2014/03/brandonsavage-50x50.jpeg 50w, https://2014.phpday.it/wp-content/uploads/2014/03/brandonsavage-139x139.jpeg 139w, https://2014.phpday.it/wp-content/uploads/2014/03/brandonsavage.jpeg 240w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>In 1994, the Gang of Four changed the world with their book, Design Patterns. Yet nearly 20 years later, we&rsquo;re still struggling with design patterns. How can this be? The answer is that design patterns are hard. Designing reusable applications is the most challenging thing a developer can do. But there&rsquo;s good news: you CAN [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/database-version-control-without-pain/" rel="bookmark">Database version control without pain</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/harrie-verveer/" rel="tag">Harrie Verveer</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/database-version-control-without-pain/" title="Database version control without pain"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/03/harrieverveer-50x50.jpeg" class="attachment-talk-small size-talk-small wp-post-image" alt="harrieverveer" srcset="https://2014.phpday.it/wp-content/uploads/2014/03/harrieverveer-150x150.jpeg 150w, https://2014.phpday.it/wp-content/uploads/2014/03/harrieverveer-50x50.jpeg 50w, https://2014.phpday.it/wp-content/uploads/2014/03/harrieverveer-139x139.jpeg 139w, https://2014.phpday.it/wp-content/uploads/2014/03/harrieverveer.jpeg 256w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>We&rsquo;ve all read the textbooks and are using version control systems for our code, but our databases are left out in the cold. Every team has their own workaround, ranging from patch files to SQL snippets in the bugtracker, but none is really robust. There isn&rsquo;t a silver bullet solution, but this talk will show [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/practical-event-sourcing/" rel="bookmark">Practical Event Sourcing</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/mathias-verraes/" rel="tag">Mathias Verraes</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/practical-event-sourcing/" title="Practical Event Sourcing"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/03/mathiasverraes-50x50.jpeg" class="attachment-talk-small size-talk-small wp-post-image" alt="mathiasverraes" srcset="https://2014.phpday.it/wp-content/uploads/2014/03/mathiasverraes-150x150.jpeg 150w, https://2014.phpday.it/wp-content/uploads/2014/03/mathiasverraes-50x50.jpeg 50w, https://2014.phpday.it/wp-content/uploads/2014/03/mathiasverraes-139x139.jpeg 139w, https://2014.phpday.it/wp-content/uploads/2014/03/mathiasverraes.jpeg 256w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>Traditionally, we create structural models for our applications, and store the state of these models in our databases. But there are alternatives: Event Sourcing is the idea that you can store all the domain events that affect an object, and replay these events to restore the object&rsquo;s state. This may sound counterintuitive, because of all [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/web-application-tech-from-startup-to-enterprise/" rel="bookmark">Web application: tech from startup to enterprise</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/miro-svrtan/" rel="tag">Miro Svrtan</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/web-application-tech-from-startup-to-enterprise/" title="Web application: tech from startup to enterprise"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/03/msvrtan-50x50.jpeg" class="attachment-talk-small size-talk-small wp-post-image" alt="msvrtan" srcset="https://2014.phpday.it/wp-content/uploads/2014/03/msvrtan-150x150.jpeg 150w, https://2014.phpday.it/wp-content/uploads/2014/03/msvrtan-50x50.jpeg 50w, https://2014.phpday.it/wp-content/uploads/2014/03/msvrtan-139x139.jpeg 139w, https://2014.phpday.it/wp-content/uploads/2014/03/msvrtan.jpeg 256w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>Mid 2009, Njuskalo.hr was a 2 year old project gaining a lot of traction in local market. Njuskalo is online classifieds platform, similar to https://www.subito.it/. That traction meant that some changes needed to be done so platform was changed and I started working as a PHP developer maintaining this new shiny code. At that time, [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/the-big-why-equal-doesnt-equal-quiz/" rel="bookmark">The Big &ldquo;Why equal doesn&rsquo;t equal&rdquo; Quiz</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/juliette-reinders-folmer/" rel="tag">Juliette Reinders Folmer</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/the-big-why-equal-doesnt-equal-quiz/" title="The Big &ldquo;Why equal doesn&rsquo;t equal&rdquo; Quiz"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/03/jrf-50x50.png" class="attachment-talk-small size-talk-small wp-post-image" alt="jrf" srcset="https://2014.phpday.it/wp-content/uploads/2014/03/jrf-150x150.png 150w, https://2014.phpday.it/wp-content/uploads/2014/03/jrf-50x50.png 50w, https://2014.phpday.it/wp-content/uploads/2014/03/jrf-139x139.png 139w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>We all compare and test data on nearly every other line in our code, be it input validation, an if-statement, a switch or determining what to display and how. So of course we are all experts on how to do these tests and comparisons&hellip;. Or are we? Come and join in on the Big &ldquo;Why [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/symfony2-and-angularjs/" rel="bookmark">Symfony2 and AngularJS</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/antonio-peric/" rel="tag">Antonio Peric</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/symfony2-and-angularjs/" title="Symfony2 and AngularJS"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/03/antonioperic-50x50.jpg" class="attachment-talk-small size-talk-small wp-post-image" alt="antonioperic" srcset="https://2014.phpday.it/wp-content/uploads/2014/03/antonioperic-150x150.jpg 150w, https://2014.phpday.it/wp-content/uploads/2014/03/antonioperic-50x50.jpg 50w, https://2014.phpday.it/wp-content/uploads/2014/03/antonioperic-139x139.jpg 139w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>Forget about classic website where UX is not so important. We are living in time where usability is one of the important thing if you are building some business client oriented web service. In locastic we are working on CRM that is based on Symfony2 as backend and AngularJS as frontend solution. How to connect [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/restful-api-development-in-laravel-4/" rel="bookmark">RESTful API development in Laravel 4</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/christopher-pecoraro/" rel="tag">Christopher Pecoraro</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/restful-api-development-in-laravel-4/" title="RESTful API development in Laravel 4"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/03/chris__pecoraro-50x50.jpeg" class="attachment-talk-small size-talk-small wp-post-image" alt="chris__pecoraro" srcset="https://2014.phpday.it/wp-content/uploads/2014/03/chris__pecoraro-150x150.jpeg 150w, https://2014.phpday.it/wp-content/uploads/2014/03/chris__pecoraro-50x50.jpeg 50w, https://2014.phpday.it/wp-content/uploads/2014/03/chris__pecoraro-139x139.jpeg 139w, https://2014.phpday.it/wp-content/uploads/2014/03/chris__pecoraro.jpeg 240w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>RESTful API&rsquo;s are useful when developing a modern web application since it allows for multiple possibilities for collaboration with third-party software as well as multiple types of front-ends, such as mobile apps and HTML5 web applications. The creation of RESTful API&rsquo;s is facilitated using Laravel 4, a PHP 5.3 Framework that is rapidly growing in [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/api-restful-and-rpc-for-php-with-apigility/" rel="bookmark">API RESTful (and RPC) for PHP with Apigility</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/enrico-zimuel/" rel="tag">Enrico Zimuel</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/api-restful-and-rpc-for-php-with-apigility/" title="API RESTful (and RPC) for PHP with Apigility"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2013/03/zimuel-50x50.jpg" class="attachment-talk-small size-talk-small wp-post-image" alt="zimuel" srcset="https://2014.phpday.it/wp-content/uploads/2013/03/zimuel-150x150.jpg 150w, https://2014.phpday.it/wp-content/uploads/2013/03/zimuel-300x300.jpg 300w, https://2014.phpday.it/wp-content/uploads/2013/03/zimuel-50x50.jpg 50w, https://2014.phpday.it/wp-content/uploads/2013/03/zimuel-139x139.jpg 139w, https://2014.phpday.it/wp-content/uploads/2013/03/zimuel.jpg 426w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>Develop a robust RESTful/RPC API for a PHP project is not a simple task. How to manage the error handling? Which format to use for the data exchange? How to manage the content negotiation? What about the versioning? How to build an authentication system? How to produce the API documentation? Apigility is an open source [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/how-to-test-2-years-of-behavior-for-16-countries-in-4-minutes-and-30-seconds/" rel="bookmark">How to test 2 years of behavior for 16 countries in 4 minutes and 30 seconds</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/giorgio-sironi/" rel="tag">Giorgio Sironi</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/how-to-test-2-years-of-behavior-for-16-countries-in-4-minutes-and-30-seconds/" title="How to test 2 years of behavior for 16 countries in 4 minutes and 30 seconds"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2013/03/sironi-50x50.jpeg" class="attachment-talk-small size-talk-small wp-post-image" alt="sironi" srcset="https://2014.phpday.it/wp-content/uploads/2013/03/sironi-150x150.jpeg 150w, https://2014.phpday.it/wp-content/uploads/2013/03/sironi-50x50.jpeg 50w, https://2014.phpday.it/wp-content/uploads/2013/03/sironi-139x139.jpeg 139w, https://2014.phpday.it/wp-content/uploads/2013/03/sironi.jpeg 161w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>A distributed system composed of multiple applications needs end-to-end testing to make sure the design contracts between the subsystems are respected, and as a form of last safety net to support Continuous Deployment. End-to-end tests are usually a scam due to their slowness and brittleness. Here&rsquo;s how we wrote fast Behat scenarios that can be [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/yooopeecache/" rel="bookmark">YooopeeCache</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/julien-pauli/" rel="tag">Julien Pauli</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/yooopeecache/" title="YooopeeCache"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2013/03/jpauli-50x50.jpg" class="attachment-talk-small size-talk-small wp-post-image" alt="jpauli" srcset="https://2014.phpday.it/wp-content/uploads/2013/03/jpauli-150x150.jpg 150w, https://2014.phpday.it/wp-content/uploads/2013/03/jpauli-300x300.jpg 300w, https://2014.phpday.it/wp-content/uploads/2013/03/jpauli-50x50.jpg 50w, https://2014.phpday.it/wp-content/uploads/2013/03/jpauli-139x139.jpg 139w, https://2014.phpday.it/wp-content/uploads/2013/03/jpauli.jpg 321w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>OPCache is PHP&rsquo;s default OPCode cache mechanism, which&rsquo;s been introduced and freed with PHP5.5 release. You can use it for 5.3, 5.4 or 5.5. This talk will detail how OPCache works, what it does to PHP and how to set it up so that you can deal with maximum performance and stability. We&rsquo;ll recall how [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/codeception-because-tests-can-have-frameworks-too/" rel="bookmark">Codeception, because tests can have frameworks too!</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/luka-muzinic/" rel="tag">Luka Muzinic</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/codeception-because-tests-can-have-frameworks-too/" title="Codeception, because tests can have frameworks too!"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/03/lmuzinic-50x50.jpg" class="attachment-talk-small size-talk-small wp-post-image" alt="lmuzinic" srcset="https://2014.phpday.it/wp-content/uploads/2014/03/lmuzinic-150x150.jpg 150w, https://2014.phpday.it/wp-content/uploads/2014/03/lmuzinic-50x50.jpg 50w, https://2014.phpday.it/wp-content/uploads/2014/03/lmuzinic-139x139.jpg 139w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>Being a developer in 2014. you can no longer ignore the importance of testing your applications. In tutorials, writing tests is easy and test driven development is piece a cake. In reality, we are usually dealing with bloated applications, legacy code and hand-me-down projects. Codeception makes testing easier and something you want to start doing, [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/docker/" rel="bookmark">Docker</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/alexander-mols/" rel="tag">Alexander Mols</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/docker/" title="Docker"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/03/iam_asm89-50x50.jpg" class="attachment-talk-small size-talk-small wp-post-image" alt="iam_asm89" srcset="https://2014.phpday.it/wp-content/uploads/2014/03/iam_asm89-50x50.jpg 50w, https://2014.phpday.it/wp-content/uploads/2014/03/iam_asm89.jpg 100w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>An introduction to docker. We&rsquo;ll discuss what docker is and what it isn&rsquo;t, comparing it to solutions you might be more familiar with (virtualbox, vmware, etc). Next we&rsquo;ll see how docker can ease development and deployment of applications with its concept of containers.</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/add-the-security-layer-to-your-rest-api-and-serve-a-distributed-web-application/" rel="bookmark">Add the security layer to your REST API and serve a distributed web application</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/marco-loche/" rel="tag">Marco Loche</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/add-the-security-layer-to-your-rest-api-and-serve-a-distributed-web-application/" title="Add the security layer to your REST API and serve a distributed web application"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/03/netamorfose-50x50.jpeg" class="attachment-talk-small size-talk-small wp-post-image" alt="netamorfose" srcset="https://2014.phpday.it/wp-content/uploads/2014/03/netamorfose-150x150.jpeg 150w, https://2014.phpday.it/wp-content/uploads/2014/03/netamorfose-50x50.jpeg 50w, https://2014.phpday.it/wp-content/uploads/2014/03/netamorfose-139x139.jpeg 139w, https://2014.phpday.it/wp-content/uploads/2014/03/netamorfose.jpeg 256w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>In the past editions of the PhpDay we have assisted to several talks about REST APIs and we learned how to implement a proper REST API service. In this talk I want to present how, at Capturator S.r.l., we have added a security layer to our private REST API (based on Symfony 2) adding authentication [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/moving-away-from-legacy-code-with-bdd/" rel="bookmark">Moving Away from Legacy code with BDD</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/konstantin-kudryashov/" rel="tag">Konstantin Kudryashov</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/moving-away-from-legacy-code-with-bdd/" title="Moving Away from Legacy code with BDD"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/03/everzet-50x50.png" class="attachment-talk-small size-talk-small wp-post-image" alt="everzet" srcset="https://2014.phpday.it/wp-content/uploads/2014/03/everzet-150x150.png 150w, https://2014.phpday.it/wp-content/uploads/2014/03/everzet-50x50.png 50w, https://2014.phpday.it/wp-content/uploads/2014/03/everzet-139x139.png 139w, https://2014.phpday.it/wp-content/uploads/2014/03/everzet.png 200w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>Greenfield projects are awesome &ndash; you can develop highest quality application using best practices on the market. But what if your bread actually is Legacy projects? Does it mean that you need to descend into darkness of QA absence? This talk will show you how to be successful even with the oldest legacy projects out [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/vagrant-provisioners-in-a-nutshell/" rel="bookmark">Vagrant Provisioners in a Nutshell</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/erika-heidi/" rel="tag">Erika Heidi</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/vagrant-provisioners-in-a-nutshell/" title="Vagrant Provisioners in a Nutshell"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/03/erikaheidi-50x50.jpeg" class="attachment-talk-small size-talk-small wp-post-image" alt="erikaheidi" srcset="https://2014.phpday.it/wp-content/uploads/2014/03/erikaheidi-150x150.jpeg 150w, https://2014.phpday.it/wp-content/uploads/2014/03/erikaheidi-50x50.jpeg 50w, https://2014.phpday.it/wp-content/uploads/2014/03/erikaheidi-139x139.jpeg 139w, https://2014.phpday.it/wp-content/uploads/2014/03/erikaheidi.jpeg 256w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>With Vagrant, we can finally forget about the environment and focus on the code, without worrying about the &ldquo;works on my machine&rdquo; problem. This talk will review Vagrant basics and focus on its main provisioners &ndash; Puppet, Chef and Ansible &ndash; giving an overview of each one and how we can use them to provision [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/space-rockets-sub-atomic-particles-and-clouds/" rel="bookmark">Space-rockets, sub-atomic particles and clouds</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/jamie-hannaford/" rel="tag">Jamie Hannaford</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/space-rockets-sub-atomic-particles-and-clouds/" title="Space-rockets, sub-atomic particles and clouds"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/03/jamiehannaford-50x50.jpeg" class="attachment-talk-small size-talk-small wp-post-image" alt="jamiehannaford" srcset="https://2014.phpday.it/wp-content/uploads/2014/03/jamiehannaford-150x150.jpeg 150w, https://2014.phpday.it/wp-content/uploads/2014/03/jamiehannaford-50x50.jpeg 50w, https://2014.phpday.it/wp-content/uploads/2014/03/jamiehannaford-139x139.jpeg 139w, https://2014.phpday.it/wp-content/uploads/2014/03/jamiehannaford.jpeg 256w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>OpenStack is a free, open-source project that allows anyone to create their own cloud infrastructure. Used by the likes of NASA, CERN, AT&amp;T and Sony, we will be looking at the reasons for its success and how it is emerging as a powerful competitor to Google and AWS. In our deep-dive, we will look at [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/concurrent-php-in-the-etsy-api/" rel="bookmark">Concurrent PHP in the Etsy API</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/matthew-graham/" rel="tag">Matthew Graham</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/concurrent-php-in-the-etsy-api/" title="Concurrent PHP in the Etsy API"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/03/graham-50x50.jpeg" class="attachment-talk-small size-talk-small wp-post-image" alt="graham" srcset="https://2014.phpday.it/wp-content/uploads/2014/03/graham-50x50.jpeg 50w, https://2014.phpday.it/wp-content/uploads/2014/03/graham.jpeg 80w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>At Etsy, we realized that if we wanted to approach Ilya Grigorik&rsquo;s challenge of 1000ms time to glass, we would have to stop doing only one thing at a time, and make our servers start working in parallel. This talk will show how we built concurrent processing into our PHP API stack that powers Etsy&rsquo;s [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/emergent-design-with-phpspec/" rel="bookmark">Emergent Design with PhpSpec</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/marcello-duarte/" rel="tag">Marcello Duarte</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/emergent-design-with-phpspec/" title="Emergent Design with PhpSpec"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/03/duarte-50x50.jpg" class="attachment-talk-small size-talk-small wp-post-image" alt="duarte" srcset="https://2014.phpday.it/wp-content/uploads/2014/03/duarte-50x50.jpg 50w, https://2014.phpday.it/wp-content/uploads/2014/03/duarte.jpg 120w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>Where does design fit in agile projects? What is refactoring and what isn&rsquo;t refactoring? What is the relationship between design and refactoring, and design and architecture? In this talk we will clarify these and other questions around emergent design and how a TDD/BDD tool like PhpSpec can help you with the process. We will look [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/ansible-orchestrate-your-infrastructure/" rel="bookmark">Ansible: Orchestrate your Infrastructure</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/jeremy-coates/" rel="tag">Jeremy Coates</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/ansible-orchestrate-your-infrastructure/" title="Ansible: Orchestrate your Infrastructure"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/03/coates-50x50.jpeg" class="attachment-talk-small size-talk-small wp-post-image" alt="coates" srcset="https://2014.phpday.it/wp-content/uploads/2014/03/coates-150x150.jpeg 150w, https://2014.phpday.it/wp-content/uploads/2014/03/coates-50x50.jpeg 50w, https://2014.phpday.it/wp-content/uploads/2014/03/coates-139x139.jpeg 139w, https://2014.phpday.it/wp-content/uploads/2014/03/coates.jpeg 256w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>Software configuration management tools are gaining ground everywhere. We&rsquo;ve all probably at least heard of puppet, chef or salt by now, however there&rsquo;s a new rising star: Ansible. In this talk we&rsquo;ll learn about the way ansible approaches configuration management, software deployment, remote execution and other general IT tasks. We&rsquo;ll examine how to get up [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/dont-screw-it-up-how-to-build-durable-web-apis/" rel="bookmark">Don&rsquo;t screw it up, how to build durable web apis</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd><a href="https://2014.phpday.it/speakers/alessandro-cinelli/" rel="tag">Alessandro Cinelli</a>, <a href="https://2014.phpday.it/speakers/alessandro-nadalin/" rel="tag">Alessandro Nadalin</a> </dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/dont-screw-it-up-how-to-build-durable-web-apis/" title="Don&rsquo;t screw it up, how to build durable web apis"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/03/cirpo-50x50.jpeg" class="attachment-talk-small size-talk-small wp-post-image" alt="cirpo" srcset="https://2014.phpday.it/wp-content/uploads/2014/03/cirpo-150x150.jpeg 150w, https://2014.phpday.it/wp-content/uploads/2014/03/cirpo-300x300.jpeg 300w, https://2014.phpday.it/wp-content/uploads/2014/03/cirpo-50x50.jpeg 50w, https://2014.phpday.it/wp-content/uploads/2014/03/cirpo-139x139.jpeg 139w, https://2014.phpday.it/wp-content/uploads/2014/03/cirpo.jpeg 500w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>In this session we will describe the best practices for writing durable apis and PHP: how would you design services that need to be stable, evolvable and easily maintainable for years without the hassle of (too much) refactoring? How do you ensure you pick the correct patterns and technologies that won&rsquo;t be outdated in the [&hellip;]</p>
+
+                        <div class="clear"></div>		    
+
+                </article><article class="post"><header class="post_header"><h3><a href="https://2014.phpday.it/talk/qa-with-the-speakers/" rel="bookmark">Q&amp;A with the speakers</a></h3>
+                                <dl><dt>Speaker:</dt>
+                                    <dd></dd>
+                                </dl><div class="clear"></div>
+                        </header><a class="thumb" href="https://2014.phpday.it/talk/qa-with-the-speakers/" title="Q&amp;A with the speakers"><img width="50" height="50" src="https://2014.phpday.it/wp-content/uploads/2014/05/phpday-generic-50x50.png" class="attachment-talk-small size-talk-small wp-post-image" alt="phpday-generic" srcset="https://2014.phpday.it/wp-content/uploads/2014/05/phpday-generic-150x150.png 150w, https://2014.phpday.it/wp-content/uploads/2014/05/phpday-generic-50x50.png 50w, https://2014.phpday.it/wp-content/uploads/2014/05/phpday-generic-139x139.png 139w" sizes="(max-width: 50px) 100vw, 50px"></a>                            
+                        <p>Special closing keynote &ldquo;Q&amp;A with the speakers&rdquo;.</p>
+
+                        <div class="clear"></div>		    
+
+                </article><div class="clear"></div>
+        </section><div class="sidebar">
+    <section id="featured_sponsors"><h4><a href="https://2014.phpday.it/sponsor#diamond" title="">Diamond sponsors</a></h4>
+
+        	<a class="banner" href="https://www.cloud.it/home.aspx" title="Aruba Cloud">
+				<span class="ribbon diamond">diamond</span>
+				<img src="https://2014.phpday.it/wp-content/uploads/2014/02/diamond_ArubaCloud_logo_300x120.png" alt="Aruba Cloud"></a>
+        <a class="banner" href="https://2014.phpday.it/sponsor/" title="">
+            <span class="ribbon diamond">Diamond</span>
+            <div style="width:297px;height:70px;text-align:center;background-color:#CCC;font-size:32px;font-weight:bold;padding-top:40px;">Buy this ad!</div>
+        </a>
+
+        <h4><a href="https://2014.phpday.it/sponsor#platinum" title="">Platinum sponsors</a></h4>
+
+        	<a class="banner" href="https://www.entercloudsuite.com/?utm_source=evento&amp;utm_medium=banner&amp;utm_campaign=phpday-verona" title="">
+				<span class="ribbon platinum">platinum</span>
+				<img src="https://2014.phpday.it/wp-content/uploads/2014/04/sponsor_enter.png" alt=""></a>	<a class="banner" href="https://www.ideato.it" title="ideato - web ideas for sale">
+				<span class="ribbon platinum">platinum</span>
+				<img src="https://2012.phpday.it/wp-content/themes/phpday/img/sponsor_ideato.jpg" alt="ideato - web ideas for sale"></a>	<a class="banner" href="https://www.jetbrains.com/" title="">
+				<span class="ribbon platinum">platinum</span>
+				<img src="https://2012.phpday.it/wp-content/uploads/2012/05/sponsor-jetbrains2.png" alt=""></a>	<a class="banner" href="https://seeweb.it/" title="">
+				<span class="ribbon platinum">platinum</span>
+				<img src="https://2014.phpday.it/wp-content/uploads/2014/02/sponsor_seeweb.png" alt=""></a>	<a class="banner" href="https://insight.sensiolabs.com/" title="">
+				<span class="ribbon platinum">platinum</span>
+				<img src="https://2014.phpday.it/wp-content/uploads/2014/02/sponsor_slinsight.png" alt=""></a>
+        <div class="clear"></div>
+    </section></div>
+        <div class="clear"></div>	
+			
+			
+		
+	</div> <!-- Closes .container -->
+
+<div id="bottom">
+    <div class="container">
+        <div class="separator"></div>
+
+        <section id="sponsors"><h4>Sponsored by</h4>
+
+            	<a class="banner" href="https://www.cloud.it/home.aspx" title="Aruba Cloud">
+				<span class="ribbon diamond">diamond</span>
+				<img src="https://2014.phpday.it/wp-content/uploads/2014/02/diamond_ArubaCloud_logo_300x120.png" alt="Aruba Cloud"></a>            	<a class="banner" href="https://www.entercloudsuite.com/?utm_source=evento&amp;utm_medium=banner&amp;utm_campaign=phpday-verona" title="">
+				<span class="ribbon platinum">platinum</span>
+				<img src="https://2014.phpday.it/wp-content/uploads/2014/04/sponsor_enter.png" alt=""></a>	<a class="banner" href="https://www.ideato.it" title="ideato - web ideas for sale">
+				<span class="ribbon platinum">platinum</span>
+				<img src="https://2012.phpday.it/wp-content/themes/phpday/img/sponsor_ideato.jpg" alt="ideato - web ideas for sale"></a>	<a class="banner" href="https://www.jetbrains.com/" title="">
+				<span class="ribbon platinum">platinum</span>
+				<img src="https://2012.phpday.it/wp-content/uploads/2012/05/sponsor-jetbrains2.png" alt=""></a>	<a class="banner" href="https://seeweb.it/" title="">
+				<span class="ribbon platinum">platinum</span>
+				<img src="https://2014.phpday.it/wp-content/uploads/2014/02/sponsor_seeweb.png" alt=""></a>	<a class="banner" href="https://insight.sensiolabs.com/" title="">
+				<span class="ribbon platinum">platinum</span>
+				<img src="https://2014.phpday.it/wp-content/uploads/2014/02/sponsor_slinsight.png" alt=""></a>            	<a class="banner" href="https://zend.com/" title="">
+				<span class="ribbon gold">gold</span>
+				<img src="https://2014.phpday.it/wp-content/uploads/2014/04/sponsor_zend.png" alt=""></a>            	<a class="banner" href="https://2ndquadrant.com/" title="2ndQuadrant">
+				<span class="ribbon silver">silver</span>
+				<img src="https://2013.phpday.it/wp-content/uploads/2013/04/sponsor_2ndquadrant.png" alt="2ndQuadrant"></a>	<a class="banner" href="https://beccati.com/" title="">
+				<span class="ribbon silver">silver</span>
+				<img src="https://2014.phpday.it/wp-content/uploads/2013/03/sponsor_beccati.png" alt=""></a>	<a class="banner" href="https://www.capturator.com/" title="">
+				<span class="ribbon silver">silver</span>
+				<img src="https://2014.phpday.it/wp-content/uploads/2014/04/silver_capturator.png" alt=""></a>	<a class="banner" href="https://www.engineyard.com/" title="">
+				<span class="ribbon silver">silver</span>
+				<img src="https://2014.phpday.it/wp-content/uploads/2014/05/sponsor_engineyard.png" alt=""></a>	<a class="banner" href="https://www.liip.ch/" title="">
+				<span class="ribbon silver">silver</span>
+				<img src="https://2014.phpday.it/wp-content/uploads/2014/04/silver_liip.png" alt=""></a>	<a class="banner" href="https://www.magmadigital.co.uk/" title="Magma Digital">
+				<span class="ribbon silver">silver</span>
+				<img src="https://2014.phpday.it/wp-content/uploads/2014/04/sponsor_magmadigital.png" alt="Magma Digital"></a>	<a class="banner" href="https://www.rackspace.com/" title="">
+				<span class="ribbon silver">silver</span>
+				<img src="https://2014.phpday.it/wp-content/uploads/2014/02/sponsor_rackspace.png" alt=""></a>	<a class="banner" href="https://www.redboothlab.com/" title="">
+				<span class="ribbon silver">silver</span>
+				<img src="https://2014.phpday.it/wp-content/uploads/2014/02/sponsor_redboothlab1.png" alt=""></a>	<a class="banner" href="https://www.skuola.net/" title="Skuola.net">
+				<span class="ribbon silver">silver</span>
+				<img src="https://2014.phpday.it/wp-content/uploads/2014/04/sponsor_skuola.png" alt="Skuola.net"></a>	<a class="banner" href="https://www.webformat.com" title="">
+				<span class="ribbon silver">silver</span>
+				<img src="https://2014.phpday.it/wp-content/uploads/2014/02/sponsor_webformat.png" alt=""></a>	<a class="banner" href="https://wyrd.it/" title="">
+				<span class="ribbon silver">silver</span>
+				<img src="https://2012.phpday.it/wp-content/uploads/2012/05/sponsor_wyrdsoftware.png" alt=""></a>            	<a class="banner" href="https://www.bmeme.com/" title="">
+				<span class="ribbon bronze">bronze</span>
+				<img src="https://2014.phpday.it/wp-content/uploads/2014/02/sponsor_bmeme.png" alt=""></a>	<a class="banner" href="https://namshi.com/" title="">
+				<span class="ribbon bronze">bronze</span>
+				<img src="https://2014.phpday.it/wp-content/uploads/2014/05/sponsor_namshi.png" alt=""></a>	<a class="banner" href="https://www.phpbestpractices.it/" title="phpbestpractices, the italian book on php">
+				<span class="ribbon bronze">bronze</span>
+				<img src="https://www.symfonyday.it/img/php_best_practices.png" alt="phpbestpractices, the italian book on php"></a>	<a class="banner" href="https://qrurl.it/r/1in" title="">
+				<span class="ribbon bronze">bronze</span>
+				<img src="https://2013.phpday.it.122.149-5-47.groveurl.com/wp-content/uploads/2012/11/sponsor_servergrove.jpg" alt=""></a>
+        </section><div class="separator"></div>
+<!-- MEDIA PARTNER -->
+        <section id="media_partner"><h4>Media Partner</h4>
+            	<a class="banner" href="https://www.codeinvaders.net" title="">
+				<span class="ribbon media">media</span>
+				<img src="https://2013.phpday.it/wp-content/uploads/2013/03/media_codeinvaders.png" alt=""></a>	<a class="banner" href="https://www.html.it/" title="HTML.it">
+				<span class="ribbon media">media</span>
+				<img src="https://2014.jsday.it/wp-content/uploads/2014/04/media_html_it.png" alt="HTML.it"></a>	<a class="banner" href="https://www.hubme.in/" title="">
+				<span class="ribbon media">media</span>
+				<img src="https://2013.phpday.it/wp-content/uploads/2013/01/media_hubmein.png" alt=""></a>	<a class="banner" href="https://www.inasset.it/" title="">
+				<span class="ribbon media">media</span>
+				<img src="https://2012.phpday.it/wp-content/uploads/2012/05/media_inasset.png" alt=""></a>	<a class="banner" href="https://blog.indigenidigitali.com/" title="">
+				<span class="ribbon media">media</span>
+				<img src="https://2013.phpday.it/wp-content/uploads/2013/01/media_indigenidigitali.png" alt=""></a>	<a class="banner" href="https://phpbenelux.eu/" title="">
+				<span class="ribbon media">media</span>
+				<img src="https://2013.phpday.it/wp-content/uploads/2013/01/media_phpbenelux.png" alt=""></a>	<a class="banner" href="https://phpwomen.org/" title="">
+				<span class="ribbon media">media</span>
+				<img src="https://2014.phpday.it/wp-content/uploads/2014/02/phpwomenlogo_resized.png" alt=""></a>	<a class="banner" href="https://programmazione.it/" title="">
+				<span class="ribbon media">media</span>
+				<img src="https://2013.phpday.it/wp-content/uploads/2013/05/media_programmazioneit.png" alt=""></a>	<a class="banner" href="https://www.programmersinpadua.it/" title="">
+				<span class="ribbon media">media</span>
+				<img src="https://2013.phpday.it/wp-content/uploads/2013/01/media_programmersinpadua.png" alt=""></a>	<a class="banner" href="https://www.scuolazoo.com/" title="">
+				<span class="ribbon media">media</span>
+				<img src="https://2014.jsday.it/wp-content/uploads/2014/05/media_scuolazoo.png" alt=""></a>	<a class="banner" href="https://www.talentgarden.it/" title="">
+				<span class="ribbon media">media</span>
+				<img src="https://2014.phpday.it/wp-content/uploads/2014/03/Logo_TalentGarden.jpg" alt=""></a>	<a class="banner" href="https://www.webdebs.org/" title="">
+				<span class="ribbon media">media</span>
+				<img src="https://2013.phpday.it/wp-content/uploads/2012/11/media_webdebs.png" alt=""></a>	<a class="banner" href="https://www.whymca.org/" title="">
+				<span class="ribbon media">media</span>
+				<img src="https://2013.phpday.it/wp-content/uploads/2013/01/media_whymca.png" alt=""></a>        </section><div class="clear"></div>
+
+        <a class="back_top button" href="https://2014.phpday.it/talk/#top" title="">Back to top</a>
+
+    </div>  <!-- Closes .container -->
+</div><!-- Closes #bottom -->
+
+<footer id="site_footer"><div class="container">
+        <div class="inside">
+            <div class="column_8">
+                <p>jsday and phpday are &copy; by <a href="https://www.grusp.org" title="">GrUSP</a> and its amazing <a href="https://2014.phpday.it/staff" title="the amazing GrUSP staff">Staff</a>.<br> Contact us to <strong>info AT grusp DOT org</strong></p>
+
+                <p>You can read our <a href="https://2014.phpday.it/privacy-policy/">privacy policy</a> and our <a href="https://2014.phpday.it/code-of-conduct/">code of conduct</a>.</p>
+                <p class="reminder">
+                    May 16th-17th 2014 &mdash; Verona, Italy
+                </p>
+            </div>
+
+            <a id="logo_grusp" href="https://www.grusp.it/" title="Event promoted by Grusp"><img src="https://2014.phpday.it/wp-content/themes/phpday/img/logo_grusp.png" alt="logo_grusp" width="71" height="46"></a>
+            <a id="logo_php_ftr" href="https://www.phpday.it/" title="phpDay"><img src="https://2014.phpday.it/wp-content/themes/phpday/img/logo_php_ftr.png" alt="logo_php_ftr" width="78" height="33"></a>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</footer><!-- Included JS Files --><script type="text/javascript" src="https://2014.phpday.it/wp-content/themes/phpday/js/blogger.js"></script><script type="text/javascript" src="https://2014.phpday.it/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20"></script><script type="text/javascript">
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"https:\/\/2014.phpday.it\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptchaEmpty":"Please verify that you are not a robot.","sending":"Sending ...","cached":"1"};
+/* ]]> */
+</script><script type="text/javascript" src="https://2014.phpday.it/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.3.1"></script><script type="text/javascript" src="https://2014.phpday.it/wp-includes/js/wp-embed.min.js?ver=4.4.1"></script></body></html><!-- Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using apc
+
+ Served from: 2014.phpday.it @ 2016-01-13 09:12:31 by W3 Total Cache -->
